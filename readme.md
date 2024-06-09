@@ -8,11 +8,11 @@ El código está dividido en dos notebooks diferentes, los cuales deben ser ejec
 
 ### Dependencias
 
-Todas las dependencias necesarias se descargan automáticamente de un Google Drive proporcionado. Esto incluye los conjuntos de datos, las imágenes procesadas y la ResNet original utilizada para entrenar el modelo. 
+Todas las dependencias necesarias se descargan automáticamente de un Google Drive proporcionado. Esto incluye los conjuntos de datos, las imágenes procesadas y la ResNet original utilizada para entrenar el modelo. La base de datos utilizada es un subset de imágenes que pertenecen a la base de datos UTK-FACES, disponible en: https://susanqq.github.io/UTKFace/. Para más información sobre el procesado de datos que se realiza, consultar el apartado 4.2 de la memoria. 
 
 ### Contenido del Repositorio
 
-- **Training_models.ipynb**: Este notebook contiene el código para entrenar los modelos. Dado el peso de los modelos y los conjuntos de datos, se incluye únicamente el código para entrenar un modelo original y luego realizar fine-tuning para olvidar el grupo de 20 a 28 años. También se proporcionan los "forget sets" y los conjuntos de datos modificados para ellos, lo que permite la aplicación de las técnicas de "machine unlearning". Las imágenes ya procesadas se incluyen para facilitar la ejecución del código.
+- **Training_models.ipynb**: Este notebook contiene el código para entrenar los modelos. Dado el peso de los modelos y los conjuntos de datos, se incluye únicamente el código para entrenar un modelo original y luego realizar fine-tuning para olvidar el grupo de 20 a 28 años. También se proporcionan los "forget sets" y los conjuntos de datos modificados para ello, lo que permite la aplicación de las técnicas de "machine unlearning". Las imágenes ya procesadas se incluyen para facilitar la ejecución del código.
 
 - **CheckResults.ipynb**: En este notebook se evalúan las predicciones de los modelos. Se calcula el "utility" y el "forgetting" para cada modelo. También se incluyen ejemplos de predicciones de cada modelo para su prueba y análisis.
 
